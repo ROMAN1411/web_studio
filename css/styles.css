@@ -1,0 +1,166 @@
+:root {
+    --header-title-color: #ffffff;
+    --primary-title-color: #212121;    
+    --accent-color: #2196F3;
+    --primary-text-color: #757575;
+    --primary-white-color: #ffffff;
+    --logo-black-color: #000000;
+    --logo-white-color: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    background-color: #ffffff;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.logo {
+    font-family: 'Raleway' sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.section-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        color: var(--primary-title-color);
+}
+
+/* --- HEADER --- */
+
+.header-logo {
+    color: var(--logo-black-color);
+}
+
+.header-logo-accent {
+    color: var(--accent-color);
+}
+
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-title-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-color);
+} 
+
+.header-contacts-link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--primary-text-color);
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+    color: var(--accent-color);
+}
+
+/* --- HERO --- */
+
+.hero {
+    background-color:#757575;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--header-title-color);
+}
+
+.hero-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+/* --- PRINCIPLES --- */
+
+.principles-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--primary-title-color);
+}
+
+.principles-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--primary-text-color);
+}
+
+/* --- ABOUT --- */
+
+
+/* --- TEAM --- */
+
+.team-list-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--primary-title-color);
+}
+
+.team-list-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+/* --- FOOTER --- */
+
+.footer {
+    background-color:#2F303A;
+}
+
+.footer-logo {
+    color: var(--logo-white-color);
+}
+
+.footer-logo-accent {
+    color: var(--accent-color);
+}
+
+.footer-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+}
+
+.footer-address {
+    color: var(--primary-white-color);
+}
+
+.footer-contacts {
+    color: rgba(255, 255, 255, 0.6);
+}
