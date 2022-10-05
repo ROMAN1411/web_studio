@@ -12,6 +12,7 @@ body {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
     background-color: #ffffff;
+    color: var(--primary-text-color);
 }
 
 .link {
@@ -65,7 +66,7 @@ body {
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: var(--primary-text-color);
+        color: inherit;
 }
 
 .header-contacts-link:hover,
@@ -109,10 +110,8 @@ body {
 }
 
 .principles-text {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    color: var(--primary-text-color);
 }
 
 /* --- ABOUT --- */
@@ -133,7 +132,6 @@ body {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    color: var(--primary-text-color);
 }
 
 /* --- FOOTER --- */
@@ -151,7 +149,6 @@ body {
 }
 
 .footer-link {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     font-style: normal;
@@ -164,3 +161,41 @@ body {
 .footer-contacts {
     color: rgba(255, 255, 255, 0.6);
 }
+
+
+/* --- PORTFOLIO --- */
+
+.button {
+    font-family: inherit;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+
+    color: var(--primary-title-color);
+    background-color: #F5F4FA;
+
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+} 
+
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-title-color);
+}
+
+.portfolio-subtitle {
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--primary-text-color);
+}
+
