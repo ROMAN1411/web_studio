@@ -170,13 +170,23 @@ img {
 
 /* --- HERO --- */
 
+.hero {
+background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bg.jpg);
+background-color: #c4c4c4;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+
+max-width: 1600px;
+margin: 0 auto;
+}
+
 .hero-container {
     padding-top: 200px;
     padding-bottom: 200px;
-}
-
-.hero {
-    background-color:#757575;
 }
 
 .hero-title {
@@ -202,6 +212,7 @@ img {
     background-color: var(--accent-color);
     display: block;
     margin: 0 auto;
+    cursor: pointer;
 
     padding: 10px 32px;
     border: none;
@@ -419,6 +430,7 @@ img {
 .footer-container {
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
 }
 
 .footer {
@@ -450,8 +462,69 @@ img {
 
 .footer-item:not(:last-child) {
     margin-bottom: 9px;
-
 }
+
+.footer-left {
+    width: 230px;
+    margin-right: 70px;
+}
+
+.footer-right {
+    margin-top: 12px;
+    
+}
+
+.footer-right-title {
+    text-transform: uppercase;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    color: var(--primary-white-color);
+
+    margin-bottom: 20px;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social-item {
+    width: 44px;
+    height: 44px;
+}
+
+.footer-social-link {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-white-color);
+}
+
+.footer-social-item + .footer-social-item {
+    margin-left: 10px;
+}
+
+.footer-social-icon {
+    fill: var(--primary-white-color);
+}
+
+/* .footer-social-item:hover .footer-social-icon,
+.footer-social-item:hover .footer-social-icon {
+    fill: var(--primary-white-color);
+} */
 
 
 /* --- PORTFOLIO --- */
@@ -493,6 +566,8 @@ img {
 .button:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    
 } 
 
 .portfolio-list {
@@ -507,6 +582,10 @@ img {
     margin-left: 30px;
     margin-top: 30px;
 }
+
+.portfolio-card:hover,
+.portfolio-card:focus {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
 
 .portfolio-title {
     font-weight: 700;
