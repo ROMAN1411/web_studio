@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -217,6 +217,7 @@
         </section>
 
     </main>
+
     <footer class="footer">
         <div class="footer-container container">
             <div class="footer-left">
@@ -276,21 +277,25 @@
     
             </div>
     
-            <div class="footer-subscription">
+            <div class="footer-signup">
                 <p class="footer-title">Підпишіться на розсилку</p>
     
-                <form class="footer-form">
-                    <input type="email" name="email" placeholder="E-mail" class="footer-input" required>
+                <form class="signup-form" name="signup">
     
-                    <button type="submit" class="main-btn footer-btn">Підписатися<svg class="footer-btn-icon">
+                        <label>
+                            <input type="email" name="email" placeholder="E-mail" class="signup-input" minlength="3" required>
+                        </label>                    
+                        <button type="submit" class="main-btn signup-btn">Підписатися<svg class="signup-btn-icon">
                             <use href="./images/icons.svg#icon-send"></use>
-                        </svg></button>
+                        </svg>
+                    </button>
     
                 </form>
             </div>
     
         </div>
     </footer>
+
 </body>
 
 </html>
