@@ -12,8 +12,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
-  background-color: #ffffff;
   color: var(--primary-text-color);
 }
 
@@ -44,11 +42,6 @@ img {
   list-style: none;
 }
 
-:root {
-  --transition-duration: 250ms;
-  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -63,6 +56,11 @@ img {
   overflow: hidden;
 }
 
+:root {
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .container {
   outline: 1px solid red;
   width: 1200px;
@@ -75,7 +73,8 @@ img {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 1.1923076923;
+  letter-spacing: 0.03em;
   display: block;
 }
 .logo--accent {
@@ -91,7 +90,8 @@ img {
 .section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--primary-title-color);
   margin-bottom: 50px;
@@ -100,7 +100,7 @@ img {
 .main-btn {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -237,6 +237,7 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--primary-title-color);
   margin-bottom: 12px;
@@ -245,6 +246,7 @@ img {
   margin-bottom: 20px;
 }
 .modal__label {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
@@ -287,30 +289,35 @@ img {
   resize: none;
 }
 .modal__text::-webkit-input-placeholder {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal__text::-moz-placeholder {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal__text:-ms-input-placeholder {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal__text::-ms-input-placeholder {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal__text::placeholder {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
@@ -321,8 +328,10 @@ img {
 }
 
 .checkbox {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7142857143;
+  letter-spacing: 0.03em;
   margin-left: 14px;
   margin-bottom: 30px;
   display: -webkit-box;
@@ -359,8 +368,10 @@ img {
   height: 8px;
 }
 .checkbox__ref {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7142857143;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 
@@ -400,7 +411,7 @@ img {
 .navigation__link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.1428571429;
   letter-spacing: 0.02em;
   color: var(--primary-title-color);
   padding-top: 32px;
@@ -444,7 +455,7 @@ img {
           align-items: center;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.1428571429;
   letter-spacing: 0.02em;
   color: inherit;
   padding-top: 32px;
@@ -477,9 +488,9 @@ img {
 .hero__title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
+  line-height: 1.3636363636;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--header-title-color);
   width: 696px;
@@ -525,7 +536,8 @@ img {
 .principles__title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.1428571429;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-title-color);
   margin-bottom: 10px;
@@ -564,6 +576,7 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
   display: -webkit-box;
@@ -606,7 +619,8 @@ img {
 .team__title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.1875;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--primary-title-color);
   margin-top: 30px;
@@ -615,7 +629,8 @@ img {
 .team__text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.1875;
+  letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 16px;
 }
@@ -702,6 +717,7 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
+  letter-spacing: 0.03em;
   color: var(--primary-white-color);
   margin-bottom: 20px;
 }
@@ -716,8 +732,10 @@ img {
   margin-bottom: 9px;
 }
 .address__link {
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
   font-style: normal;
 }
 
@@ -786,7 +804,8 @@ img {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--primary-title-color);
   background-color: #F5F4FA;
@@ -837,9 +856,11 @@ img {
   position: absolute;
   top: 0;
   padding: 63px 24px;
-  background-color: var(--accent-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.5555555556;
+  letter-spacing: 0.03em;
   color: var(--primary-white-color);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
@@ -865,6 +886,10 @@ img {
   margin-bottom: 4px;
 }
 .portfolio__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);

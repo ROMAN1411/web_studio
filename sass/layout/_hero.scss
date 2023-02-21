@@ -16,11 +16,8 @@
     }
 
     &__title {
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
+        @include font(900, 44px, 60px, 0.06em);
         text-align: center;
-        letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--header-title-color);
         width: 696px;
