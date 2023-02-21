@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
@@ -430,60 +429,60 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close>
-                <svg class="close-btn-icon" width="11" height="11">
+                <svg class="close-btn__icon" width="11" height="11">
                     <use href="./images/icons.svg#icon-close-btn"></use>
                 </svg>
             </button>
 
-            <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+            <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
 
-            <form action="#" class="modal-form js-speaker-form">
+            <form action="#" class="modal__form js-speaker-form">
 
-                <div class="modal-field">
-                    <label class="modal-label">
+                <div class="modal__field">
+                    <label class="modal__label">
                         Ім'я
-                        <span class="input-wrapper">
-                            <input type="text" name="username" class="modal-input" minlength="2" required>
-                                <svg class="input-icon">
+                        <span class="modal__wrapper">
+                            <input type="text" name="username" class="modal__input" minlength="2" required>
+                                <svg class="modal__icon">
                                     <use href="./images/icons.svg#icon-user"></use>
                                 </svg>
                         </span>
                     </label>
 
-                    <label class="modal-label">
+                    <label class="modal__label">
                         Телефон
-                        <span class="input-wrapper">
-                            <input type="tel" name="phone-number" class="modal-input" required>
-                                <svg class="input-icon">
+                        <span class="modal__wrapper">
+                            <input type="tel" name="phone-number" class="modal__input" required>
+                                <svg class="modal__icon">
                                     <use href="./images/icons.svg#icon-tel"></use>
                                 </svg>
                         </span>
                     </label>
 
-                    <label class="modal-label">
+                    <label class="modal__label">
                         Пошта
-                        <span class="input-wrapper">
-                            <input type="email" name="email" class="modal-input" required>
-                                <svg class="input-icon">
+                        <span class="modal__wrapper">
+                            <input type="email" name="email" class="modal__input" required>
+                                <svg class="modal__icon">
                                     <use href="./images/icons.svg#icon-email"></use>
                                 </svg>
                         </span>
                     </label>
 
-                    <label class="modal-label">
+                    <label class="modal__label">
                         Коментар
-                        <textarea class="modal-input modal-text" name="comment" placeholder="Введіть текст"></textarea>
+                        <textarea class="modal__input modal__text" name="comment" placeholder="Введіть текст"></textarea>
                     </label>
                 </div>
 
-                <label class="check-text">
-                    <input type="checkbox" name="policy" class="modal-checkbox visually-hidden" required>
-                    <span class="checked-box">
-                        <svg class="check-icon">
+                <label class="checkbox">
+                    <input type="checkbox" name="policy" class="checkbox__input visually-hidden" required>
+                    <span class="checkbox__checked">
+                        <svg class="checkbox__icon">
                             <use href="./images/icons.svg#icon-check"></use>
                         </svg>
                     </span>
-                    Погоджуюся з розсилкою та приймаю &#160;<a href="/" class="check-ref">Умови договору</a>
+                    Погоджуюся з розсилкою та приймаю &#160;<a href="/" class="checkbox__ref">Умови договору</a>
                     
                 </label>
                 <button type="submit" class="main-btn modal-btn">Відправити</button>
