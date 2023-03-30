@@ -1,7 +1,9 @@
 .about {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 
     &__container {
-        padding-top: 94px;
         padding-bottom: 94px;
     }
 
