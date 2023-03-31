@@ -4,16 +4,34 @@
     &__container {
         padding-top: 60px;
         padding-bottom: 60px;
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
+    }
+
+    &__wrap {
+        @media screen and (min-width: 768px) {
         display: flex;
+        justify-content: space-around;
+        }
     }
 
     &__left {
+        @media screen and (min-width: 1200px) {
         width: 230px;
         margin-right: 70px;
+        }
+        
     }
 
     &__logo {
         margin-bottom: 20px;
+        text-align: center;
+
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
     }
 
     &__address {
@@ -25,16 +43,28 @@
     }
 
     &__right {
-        margin-top: 12px;
+        margin-bottom: 60px;
+        @media screen and (min-width: 768px) {
+            margin-top: 5px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 12px;
+            margin-bottom: 0;
+        }
     }
 
     &__title {
         text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20px;
 
         @include font(700, 14px, 16px, 0.03em);
         color: var(--primary-white-color);
 
-        margin-bottom: 20px;
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
     }
 
     &__social-link {
@@ -47,8 +77,28 @@
 }
 
 .address {
+    &__item {
+        height: 21px;
+    }
+  
     &__item:not(:last-child) {
-        margin-bottom: 9px;
+        margin-bottom: 8px;
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 9px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
+            align-items: start;
+        }
     }
 
     &__link {
@@ -60,30 +110,55 @@
 /* -- SIGNUP -- */
 
 .footer__signup {
-    margin-top: 12px;
-    margin-left: auto;
+    @media screen and (min-width: 1200px) {
+        margin-top: 12px;
+        margin-left: auto;
+    }
 }
 
 
 .signup {
-    display: flex;
-    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+    }
+
 
     &__input {
-        margin-right: 12px;
+        margin: 0 auto;
+
         background-color: transparent;
 
         border: 1px solid rgba(255, 255, 255, 0.3);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
 
-        width: 358px;
+        width: 100%;
         height: 50px;
+
+        margin-bottom: 20px;
 
         padding: 15px 16px;
         outline: none;
 
         color: var(--primary-white-color);
+     
+
+        @media screen and (min-width: 768px) {
+            width: 450px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
+            margin-right: 12px;
+            width: 358px;
+        }
     }
 }
 
