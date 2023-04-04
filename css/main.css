@@ -352,6 +352,7 @@ img {
 .checkbox__icon {
   width: 11px;
   height: 8px;
+  fill: var(--primary-white-color);
 }
 .checkbox__ref {
   font-weight: 400;
@@ -390,19 +391,6 @@ img {
   .header__logo {
     margin-top: 24px;
     margin-bottom: 25px;
-  }
-}
-
-.menu-toggle {
-  border: none;
-  background-color: transparent;
-  padding: 0;
-  line-height: 0;
-  margin-left: auto;
-}
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none;
   }
 }
 
@@ -494,6 +482,111 @@ img {
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.mob-menu__open-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu__open-btn {
+    display: none;
+  }
+}
+
+.mob-menu__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+}
+
+.mob-menu__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: #FFFFFF;
+  transform: translateX(100%);
+  transition: transform var(--transition-duration) var(--transition-timing-function);
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.mob-menu__item + .mob-menu__item {
+  margin-top: 32px;
+}
+
+.mob-menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: var(--primary-title-color);
+}
+
+.mob-current {
+  color: var(--accent-color);
+}
+
+.mob-menu__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mob-menu__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.mob-menu__contacts-item + .mob-menu__contacts-item {
+  margin-top: 32px;
+}
+
+.mob-menu__contacts-item {
+  margin-bottom: 64px;
+}
+
+.mob-menu__socials {
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.mob-menu__socials-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  padding-right: 10px;
+}
+
+.mob-menu__socials-link-devider {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
 }
 
 .hero {
@@ -955,6 +1048,7 @@ img {
   width: 24px;
   height: 24px;
   margin-left: 10px;
+  fill: var(--primary-white-color);
 }
 
 .portfolio-page__container {
