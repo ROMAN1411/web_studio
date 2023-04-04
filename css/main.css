@@ -335,13 +335,14 @@ img {
   }
 }
 .checkbox__checked {
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   border: 2px solid #000000;
   border-radius: 2px;
   margin-right: 7px;
   display: flex;
   align-items: center;
+  justify-content: center;
   transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
 .checkbox__input:checked + .checkbox__checked {
@@ -376,9 +377,33 @@ img {
   align-items: center;
 }
 .header__logo {
-  margin-top: 25px;
-  margin-right: 93px;
-  margin-bottom: 25px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-top: 24px;
+    margin-bottom: 25px;
+  }
+}
+
+.menu-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
 }
 
 .navigation {
@@ -387,6 +412,13 @@ img {
 }
 .navigation__list {
   display: flex;
+  margin-left: 90px;
+  line-height: 0;
+}
+@media screen and (max-width: 767px) {
+  .navigation__list {
+    display: none;
+  }
 }
 .navigation__item:not(:last-child) {
   margin-right: 50px;
@@ -421,10 +453,30 @@ img {
 
 .contacts {
   display: flex;
+  flex-direction: column;
+  align-items: start;
   margin-left: auto;
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    flex-direction: row;
+  }
 }
 .contacts__item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
 }
 .contacts__link {
   display: flex;
@@ -434,8 +486,6 @@ img {
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
   color: inherit;
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
 .contacts__link:hover, .contacts__link:focus {

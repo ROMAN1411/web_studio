@@ -137,8 +137,6 @@
     border-radius: 50%;
     background-color: transparent;
 
-    
-
     &__icon {
         fill: var(--logo-black-color);
         transition: fill var(--transition-duration) var(--transition-timing-function);
@@ -163,13 +161,14 @@
     margin-bottom: 30px;
 
     &__checked {
-        width: 16px;
+        min-width: 16px;
         height: 15px;
         border: 2px solid #000000;
         border-radius: 2px;
         margin-right: 7px;
         display: flex;
         align-items: center;
+        justify-content: center;
         transition: background-color var(--transition-duration) var(--transition-timing-function);
 
         .checkbox__input:checked+& {
