@@ -1064,6 +1064,11 @@ img {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 1199px) {
+  .signup__btn {
+    margin-top: 20px;
+  }
+}
 .signup__icon {
   width: 24px;
   height: 24px;

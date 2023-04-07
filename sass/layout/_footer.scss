@@ -157,6 +157,11 @@
         padding: 10px 28px;
         display: flex;
         align-items: center;
+
+        @media screen and (max-width: 1199px) {
+            margin-top: 20px;
+            
+        }
     }
 
     &__icon {
