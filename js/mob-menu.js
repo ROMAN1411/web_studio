@@ -1,7 +1,7 @@
 (() => {
-  const mobileMenu = document.querySelector('.js-menu-container');
-  const openMenuBtn = document.querySelector('.js-open-menu');
-  const closeMenuBtn = document.querySelector('.js-close-menu');
+  const mobileMenu = document.querySelector('[data-menu]');
+  const openMenuBtn = document.querySelector('[data-menu-open]');
+  const closeMenuBtn = document.querySelector('[data-menu-close]');
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -26,3 +26,18 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+
+// (() => {
+//   const refs = {
+//     openMenuBtn: document.querySelector("[data-menu-open]"),
+//     closeMenuBtn: document.querySelector("[data-menu-close]"),
+//     menu: document.querySelector("[data-menu]"),
+//   };
+
+//   refs.openMenuBtn.addEventListener("click", toggleMenu);
+//   refs.closeMenuBtn.addEventListener("click", toggleMenu);
+
+//   function toggleMenu() {
+//     refs.menu.classList.toggle("is-open");
+//   }
+// })();

@@ -22,11 +22,19 @@
     transform: scale(1.2) rotate(-5deg) translate(-75px);
 }
 
+.scroll-container {
+    @media screen and (max-height: 610px) {
+        margin: auto;
+        max-height: 100%;
+        overflow-y: scroll;
+    }
+}
+
 .modal {
-    width: 450px;
+    max-width: 450px;
 
     @media screen and (min-width: 1200px) {
-        width: 528px;
+        max-width: 528px;
     }
 
     padding: 40px;
@@ -52,8 +60,8 @@
         color: var(--primary-title-color);
 
         @media screen and (min-width: 1200px) {
-                @include font(700, 20px, 23px, 0.03em);
-            }
+            @include font(700, 20px, 23px, 0.03em);
+        }
     }
 
     &__field {
@@ -153,7 +161,7 @@
 
     @media screen and (min-width: 1200px) {
         @include font(400, 14px, 24px, 0.03em);
-            margin-left: 12px;
+        margin-left: 12px;
     }
 
     display: flex;

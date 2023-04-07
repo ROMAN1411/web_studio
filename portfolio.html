@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Trainee project WebStudio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,11 +22,10 @@
 
     <header class="header">
         <div class="header__container container">
-            <nav class="navigation">
-                <a class="logo logo--dark header__logo link" href="./index.html">
-                    <span class="logo--accent">Web</span>Studio
-                </a>
     
+            <nav class="navigation">
+                <a class="logo logo--dark header__logo link" href="./index.html"><span
+                        class="logo--accent">Web</span>Studio</a>
                 <ul class="navigation__list list">
                     <li class="navigation__item">
                         <a class="navigation__link link" href="./index.html">Студія</a>
@@ -57,17 +57,17 @@
                     </a>
                 </li>
             </ul>
-            <button type="button" class="mob-menu__open-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+    
+            <button type="button" class="menu-btn__open" aria-expanded="false" aria-controls="mobile-menu" data-menu-open>
                 <svg width="40" height="40">
                     <use href="./images/icons.svg#icon-menu-btn__open"></use>
                 </svg>
             </button>
         </div>
     
-        <!-- <div class="menu-container js-menu-container" id="mobile-menu">
+        <div class="menu-container" id="mobile-menu" data-menu>
     
-            <button type="button" class="mob-menu__close-btn js-close-menu" aria-expanded="false"
-                aria-controls="mobile-menu">
+            <button type="button" class="menu-btn__close" aria-expanded="false" aria-controls="mobile-menu" data-menu-close>
                 <svg width="40" height="40">
                     <use href="./images/icons.svg#icon-menu-btn__close"></use>
                 </svg>
@@ -76,22 +76,22 @@
             <div class="mob-menu__content">
                 <ul class="mob-menu__list list">
                     <li class="mob-menu__item">
-                        <a href="./index.html" class="mob-menu__link link mob-current">Студия</a>
+                        <a href="./index.html" class="mob-menu__link link">Студия</a>
                     </li>
                     <li class="mob-menu__item">
-                        <a href="./portfolio.html" class="mob-menu__link link">Портфолио</a>
+                        <a href="./portfolio.html" class="mob-menu__link mob-menu--current link">Портфолио</a>
                     </li>
                     <li class="mob-menu__item">
                         <a href="" class="mob-menu__link link">Контакты</a>
                     </li>
                 </ul>
     
-                <div class="mob-menu__bottom-block">
+                <div class="mob-menu__bottom">
                     <ul class="mob-menu__contacts list">
-                        <li class="mob-menu__contacts-item">
+                        <li class="mob-menu__item">
                             <a class="mob-menu__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
                         </li>
-                        <li class="mob-menu__contacts-item">
+                        <li class="mob-menu__item">
                             <a class="mob-menu__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>
                     </ul>
@@ -107,14 +107,12 @@
                     </ul>
                 </div>
             </div>
-    
-        </div> -->
-    
+        </div>
     </header>
     
     <main>
         <h1 class="visually-hidden">Портфоліо</h1>
-        
+
         <section class="portfolio-page">
             <div class="portfolio-page__container container">
             <h2 class="visually-hidden">Набір радіокнопок</h2>
@@ -138,7 +136,7 @@
             </ul>
 
             <ul class="portfolio list">
-                
+
                 <li class="portfolio__card">
                     <a class="link" href="">
                         <div class="portfolio__card-wrap">
@@ -486,5 +484,4 @@
     <script src="./js/mob-menu.js"></script>
 
 </body>
-
 </html>
