@@ -1,173 +1,170 @@
 .footer {
-    background-color: #2F303A;
+  background-color: #2f303a;
 
-    &__container {
-        padding-top: 60px;
-        padding-bottom: 60px;
+  &__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-        @media screen and (min-width: 1200px) {
-            display: flex;
-        }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+
+  &__wrap {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  &__left {
+    @media screen and (min-width: 1200px) {
+      width: 230px;
+      margin-right: 70px;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
+  }
+
+  &__address {
+    color: var(--primary-white-color);
+  }
+
+  &__contacts {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__right {
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      margin-top: 5px;
     }
 
-    &__wrap {
-        @media screen and (min-width: 768px) {
-            display: flex;
-            justify-content: space-around;
-        }
+    @media screen and (min-width: 1200px) {
+      margin-top: 12px;
+      margin-bottom: 0;
     }
+  }
 
-    &__left {
-        @media screen and (min-width: 1200px) {
-            width: 230px;
-            margin-right: 70px;
-        }
-        
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @include font(700, 14px, 16px, 0.03em);
+    color: var(--primary-white-color);
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
     }
+  }
 
-    &__logo {
-        margin-bottom: 20px;
-        text-align: center;
+  &__social-link {
+    background: rgba(255, 255, 255, 0.1);
+  }
 
-        @media screen and (min-width: 1200px) {
-            text-align: left;
-        }
-    }
-
-    &__address {
-        color: var(--primary-white-color);
-    }
-
-    &__contacts {
-        color: rgba(255, 255, 255, 0.6);
-    }
-
-    &__right {
-        margin-bottom: 60px;
-        @media screen and (min-width: 768px) {
-            margin-top: 5px;
-        }
-
-        @media screen and (min-width: 1200px) {
-            margin-top: 12px;
-            margin-bottom: 0;
-        }
-    }
-
-    &__title {
-        text-transform: uppercase;
-        text-align: center;
-        margin-bottom: 20px;
-
-        @include font(700, 14px, 16px, 0.03em);
-        color: var(--primary-white-color);
-
-        @media screen and (min-width: 1200px) {
-            text-align: left;
-        }
-    }
-
-    &__social-link {
-        background: rgba(255, 255, 255, 0.1);
-    }
-
-    &__social-icon {
-        fill: var(--primary-white-color);
-    }
+  &__social-icon {
+    fill: var(--primary-white-color);
+  }
 }
 
 .address {
-    &__item {
-        height: 21px;
+  &__item {
+    height: 21px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
     }
+  }
 
-    &__item:not(:last-child) {
-        margin-bottom: 8px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
 
-        @media screen and (min-width: 1200px) {
-            margin-bottom: 9px;
-        }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      align-items: start;
     }
+  }
 
-    &__list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 60px;
-
-        @media screen and (min-width: 1200px) {
-            margin-bottom: 0;
-            align-items: start;
-        }
-    }
-
-    &__link {
-        @include font(400, 14px, 24px, 0.03em);
-        font-style: normal;
-    }
+  &__link {
+    @include font(400, 14px, 24px, 0.03em);
+    font-style: normal;
+  }
 }
 
 /* -- SIGNUP -- */
 
 .footer__signup {
-    @media screen and (min-width: 1200px) {
-        margin-top: 12px;
-        margin-left: auto;
-    }
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+    margin-left: auto;
+  }
 }
 
 .signup {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+
+  &__input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 15px 16px;
+    outline: none;
+    margin: 0 auto;
+
+    color: var(--primary-white-color);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 
     @media screen and (min-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      width: 450px;
     }
 
     @media screen and (min-width: 1200px) {
-        flex-direction: row;
+      margin-bottom: 0;
+      margin-right: 12px;
+      width: 358px;
     }
+  }
 
-    &__input {
-        width: 100%;
-        height: 50px;
-        margin-bottom: 20px;
-        padding: 15px 16px;
-        outline: none;
-        margin: 0 auto;
+  &__btn {
+    padding: 10px 28px;
+    display: flex;
+    align-items: center;
 
-        color: var(--primary-white-color);
-        background-color: transparent;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-
-        @media screen and (min-width: 768px) {
-            width: 450px;
-        }
-
-        @media screen and (min-width: 1200px) {
-            margin-bottom: 0;
-            margin-right: 12px;
-            width: 358px;
-        }
+    @media screen and (max-width: 1199px) {
+      margin-top: 20px;
     }
+  }
 
-    &__btn {
-        padding: 10px 28px;
-        display: flex;
-        align-items: center;
-
-        @media screen and (max-width: 1199px) {
-            margin-top: 20px;
-            
-        }
-    }
-
-    &__icon {
-        width: 24px;
-        height: 24px;
-        margin-left: 10px;
-        fill: var(--primary-white-color);
-    }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: var(--primary-white-color);
+  }
 }
